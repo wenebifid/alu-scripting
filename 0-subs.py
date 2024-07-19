@@ -1,5 +1,6 @@
-
-n that queries the 'Reddit API' and returns the number of subscribers
+#!/usr/bin/python3
+"""
+function that queries the 'Reddit API' and returns the number of subscribers
 """
 import requests
 
@@ -16,4 +17,4 @@ def number_of_subscribers(subreddit):
         data = response.json()["data"]
         return data["subscribers"]
     else:
-        return 0:
+        return 0
